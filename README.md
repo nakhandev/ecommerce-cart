@@ -5,9 +5,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Java-17+-E76F00?style=for-the-badge&logo=openjdk&logoColor=white">
-    <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Java-17+-F89820?style=for-the-badge&logo=openjdk&logoColor=black">
-    <img alt="Java Badge" src="https://img.shields.io/badge/Java-17+-E76F00?style=for-the-badge&logo=openjdk&logoColor=white">
+    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Java-11+-E76F00?style=for-the-badge&logo=openjdk&logoColor=white">
+    <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Java-11+-F89820?style=for-the-badge&logo=openjdk&logoColor=black">
+    <img alt="Java Badge" src="https://img.shields.io/badge/Java-11+-E76F00?style=for-the-badge&logo=openjdk&logoColor=white">
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Spring%20MVC-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
@@ -51,7 +51,7 @@ Supports integration with **multiple payment gateways** and ensures smooth check
 
 | Tech | Role |
 |------|------|
-| ☕ **Java 17+** | Core language |
+| ☕ **Java 11+** | Core language |
 | 🌿 **Spring MVC** | Web framework |
 | 🧮 **MySQL** | Database |
 | 🧾 **JSP** | Frontend views |
