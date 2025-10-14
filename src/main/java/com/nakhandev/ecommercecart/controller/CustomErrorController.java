@@ -88,7 +88,7 @@ public class CustomErrorController implements ErrorController {
             case INTERNAL_SERVER_ERROR:
             case BAD_GATEWAY:
             case SERVICE_UNAVAILABLE:
-                return "error/500";
+                return "error/general"; // Use general error page for server errors
             default:
                 return "error/general";
         }

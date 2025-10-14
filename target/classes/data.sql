@@ -43,7 +43,7 @@ INSERT IGNORE INTO products (name, short_description, long_description, sku, pri
 -- Insert sample users
 INSERT IGNORE INTO users (username, email, password, first_name, last_name, phone_number, is_active, role, created_at, updated_at) VALUES
 ('admin', 'admin@ecommerce.com', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lbdxp8lQ2W6.5fIxm', 'Admin', 'User', '1234567890', true, 'ADMIN', NOW(), NOW()),
-('john_doe', 'john@example.com', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lbdxp8lQ2W6.5fIxm', 'John', 'Doe', '9876543210', true, 'CUSTOMER', NOW(), NOW()),
+('nakdev', 'nakdev@example.com', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lbdxp8lQ2W6.5fIxm', 'Nak', 'Dev', '9876543210', true, 'CUSTOMER', NOW(), NOW()),
 ('jane_smith', 'jane@example.com', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lbdxp8lQ2W6.5fIxm', 'Jane', 'Smith', '5556667777', true, 'CUSTOMER', NOW(), NOW()),
 ('manager', 'manager@ecommerce.com', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lbdxp8lQ2W6.5fIxm', 'Store', 'Manager', '1112223333', true, 'MANAGER', NOW(), NOW());
 
@@ -51,18 +51,18 @@ INSERT IGNORE INTO users (username, email, password, first_name, last_name, phon
 
 -- Create sample carts for users
 INSERT IGNORE INTO carts (user_id, total_items, total_amount, created_at, updated_at)
-SELECT id, 0, 0.00, NOW(), NOW() FROM users WHERE username IN ('john_doe', 'jane_smith');
+SELECT id, 0, 0.00, NOW(), NOW() FROM users WHERE username IN ('nakdev', 'jane_smith');
 
 -- Add sample cart items
 INSERT IGNORE INTO cart_items (cart_id, product_id, quantity, unit_price, subtotal, created_at, updated_at)
 SELECT c.id, p.id, 2, p.price * 0.9, p.price * 0.9 * 2, NOW(), NOW()
 FROM carts c, products p, users u
-WHERE c.user_id = u.id AND u.username = 'john_doe' AND p.sku = 'IPH15P-128';
+WHERE c.user_id = u.id AND u.username = 'nakdev' AND p.sku = 'IPH15P-128';
 
 INSERT IGNORE INTO cart_items (cart_id, product_id, quantity, unit_price, subtotal, created_at, updated_at)
 SELECT c.id, p.id, 1, p.price, p.price * 1, NOW(), NOW()
 FROM carts c, products p, users u
-WHERE c.user_id = u.id AND u.username = 'john_doe' AND p.sku = 'SONY-WH1000XM5';
+WHERE c.user_id = u.id AND u.username = 'nakdev' AND p.sku = 'SONY-WH1000XM5';
 
 INSERT IGNORE INTO cart_items (cart_id, product_id, quantity, unit_price, subtotal, created_at, updated_at)
 SELECT c.id, p.id, 3, p.price * 0.85, p.price * 0.85 * 3, NOW(), NOW()
@@ -89,7 +89,7 @@ SELECT u.id, CONCAT('ORD-', UNIX_TIMESTAMP(NOW()), '-', LPAD(FLOOR(RAND() * 1000
 DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY),
 DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY),
 NOW(), NOW()
-FROM users u WHERE u.username = 'john_doe';
+FROM users u WHERE u.username = 'nakdev';
 
 INSERT IGNORE INTO orders (user_id, order_number, status, total_items, total_amount, tax_amount, shipping_amount, shipping_address, order_date, created_at, updated_at)
 SELECT u.id, CONCAT('ORD-', UNIX_TIMESTAMP(NOW()), '-', LPAD(FLOOR(RAND() * 1000), 3, '0')),
@@ -103,12 +103,12 @@ FROM users u WHERE u.username = 'jane_smith';
 INSERT IGNORE INTO order_items (order_id, product_id, quantity, unit_price, subtotal, product_name, product_sku, created_at)
 SELECT o.id, p.id, 1, p.price * 0.95, p.price * 0.95, p.name, p.sku, NOW()
 FROM orders o, products p, users u
-WHERE o.user_id = u.id AND u.username = 'john_doe' AND p.sku = 'IPH15P-128';
+WHERE o.user_id = u.id AND u.username = 'nakdev' AND p.sku = 'IPH15P-128';
 
 INSERT IGNORE INTO order_items (order_id, product_id, quantity, unit_price, subtotal, product_name, product_sku, created_at)
 SELECT o.id, p.id, 1, p.price * 0.85, p.price * 0.85, p.name, p.sku, NOW()
 FROM orders o, products p, users u
-WHERE o.user_id = u.id AND u.username = 'john_doe' AND p.sku = 'SONY-WH1000XM5';
+WHERE o.user_id = u.id AND u.username = 'nakdev' AND p.sku = 'SONY-WH1000XM5';
 
 INSERT IGNORE INTO order_items (order_id, product_id, quantity, unit_price, subtotal, product_name, product_sku, created_at)
 SELECT o.id, p.id, 1, p.price, p.price, p.name, p.sku, NOW()
@@ -132,7 +132,7 @@ total_amount = (
 INSERT IGNORE INTO payments (order_id, payment_method, transaction_id, amount, currency, status, payment_date, created_at, updated_at)
 SELECT o.id, 'CREDIT_CARD', CONCAT('TXN-', UNIX_TIMESTAMP(NOW()), '-', LPAD(FLOOR(RAND() * 1000), 3, '0')),
 o.total_amount, 'INR', 'COMPLETED', NOW(), NOW(), NOW()
-FROM orders o WHERE o.user_id IN (SELECT id FROM users WHERE username IN ('john_doe', 'jane_smith'));
+FROM orders o WHERE o.user_id IN (SELECT id FROM users WHERE username IN ('nakdev', 'jane_smith'));
 
 -- Update product stock quantities (reduce by orders)
 UPDATE products p

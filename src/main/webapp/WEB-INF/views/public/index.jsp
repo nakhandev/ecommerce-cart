@@ -1,9 +1,189 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <!-- Page Title -->
 <c:set var="pageTitle" value="Home" scope="request"/>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><c:out value="${pageTitle != null ? pageTitle : ''}"/>E-Shop</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="<c:url value='/static/css/custom.css'/>" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link href="<c:url value='/static/images/favicon.svg'/>" rel="icon" type="image/svg+xml">
+
+    <style>
+        /* Additional custom styles for the landing page */
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 60vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 50%);
+            opacity: 0.3;
+        }
+
+        .section-title {
+            color: #0d6efd;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .btn-ecommerce {
+            border-radius: 12px;
+            font-weight: 600;
+            padding: 0.75rem 2rem;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-ecommerce-primary {
+            background: linear-gradient(135deg, #0d6efd 0%, #6f42c1 100%);
+            color: white;
+        }
+
+        .btn-ecommerce-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(13, 110, 253, 0.3);
+        }
+
+        .btn-ecommerce-outline {
+            border: 2px solid #0d6efd;
+            color: #0d6efd;
+            background: transparent;
+        }
+
+        .btn-ecommerce-outline:hover {
+            background: #0d6efd;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .category-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: white;
+            height: 100%;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-card {
+            padding: 2rem 1rem;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .trust-indicators {
+            margin-top: 2rem;
+        }
+
+        .trust-indicators .d-flex {
+            gap: 1.5rem;
+        }
+
+        /* Animation classes */
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 53%, 80%, 100% { transform: translate3d(0,0,0); }
+            40%, 43% { transform: translate3d(0, -30px, 0); }
+            70% { transform: translate3d(0, -15px, 0); }
+            90% { transform: translate3d(0, -4px, 0); }
+        }
+
+        .animate-slide-left {
+            animation: slideInLeft 0.8s ease-out;
+        }
+
+        .animate-slide-right {
+            animation: slideInRight 0.8s ease-out;
+        }
+
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+
+        .floating-card {
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Responsive improvements */
+        @media (max-width: 768px) {
+            .hero-section {
+                text-align: center;
+                padding: 3rem 0;
+                min-height: 50vh;
+            }
+
+            .hero-section .display-4 {
+                font-size: 2rem;
+            }
+
+            .trust-indicators .d-flex {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
 
 <!-- Enhanced Hero Section -->
 <section class="hero-section bg-gradient-primary text-white py-5 position-relative overflow-hidden">
@@ -173,7 +353,7 @@
                                 </p>
                                 <div class="product-price mb-3">
                                     <c:choose>
-                                        <c:when test="${product.discountPercentage > 0}">
+                                        <c:when test="${product.discountPercentage > 0 && not empty product.discountedPrice}">
                                             <span class="text-decoration-line-through text-muted me-2">
                                                 ₹${product.price}
                                             </span>

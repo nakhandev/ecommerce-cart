@@ -16,13 +16,11 @@
 [[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mecommerce-cart[0;1m ---[m
 [[1;34mINFO[m] Changes detected - recompiling the module!
 [[1;34mINFO[m] Compiling 80 source files to /home/nakhan/GITHUB/ecommerce-cart/target/classes
-[[1;34mINFO[m] /home/nakhan/GITHUB/ecommerce-cart/src/main/java/com/nakhandev/ecommercecart/config/SecurityConfig.java: /home/nakhan/GITHUB/ecommerce-cart/src/main/java/com/nakhandev/ecommercecart/config/SecurityConfig.java uses or overrides a deprecated API.
-[[1;34mINFO[m] /home/nakhan/GITHUB/ecommerce-cart/src/main/java/com/nakhandev/ecommercecart/config/SecurityConfig.java: Recompile with -Xlint:deprecation for details.
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time:  4.016 s
-[[1;34mINFO[m] Finished at: 2025-10-14T08:25:35+05:30
+[[1;34mINFO[m] Total time:  3.462 s
+[[1;34mINFO[m] Finished at: 2025-10-14T09:51:18+05:30
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] Scanning for projects...
 [[1;34mINFO[m] 
@@ -54,7 +52,7 @@
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.7.0:run[m [1m(default-cli)[m @ [36mecommerce-cart[0;1m ---[m
 [[1;34mINFO[m] Attaching agents: []
-08:25:38.755 [main] INFO com.nakhandev.ecommercecart.EcommerceCartApplication - Starting E-commerce Cart System v1.0.0
+09:51:21.352 [main] INFO com.nakhandev.ecommercecart.EcommerceCartApplication - Starting E-commerce Cart System v1.0.0
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -64,43 +62,43 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.0)
 
-2025-10-14 08:25:39.156  INFO 142006 --- [           main] c.n.e.EcommerceCartApplication           : Starting EcommerceCartApplication using Java 11.0.28 on nakhan.org with PID 142006 (/home/nakhan/GITHUB/ecommerce-cart/target/classes started by nakhan in /home/nakhan/GITHUB/ecommerce-cart)
-2025-10-14 08:25:39.156 DEBUG 142006 --- [           main] c.n.e.EcommerceCartApplication           : Running with Spring Boot v2.7.0, Spring v5.3.20
-2025-10-14 08:25:39.157  INFO 142006 --- [           main] c.n.e.EcommerceCartApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-10-14 08:25:39.721  INFO 142006 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-14 08:25:39.764  INFO 142006 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 6 JPA repository interfaces.
-2025-10-14 08:25:40.361  INFO 142006 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2025-10-14 08:25:40.367  INFO 142006 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-10-14 08:25:40.367  INFO 142006 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2025-10-14 08:25:40.563  INFO 142006 --- [           main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2025-10-14 08:25:40.569  INFO 142006 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-10-14 08:25:40.569  INFO 142006 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1365 ms
-2025-10-14 08:25:40.741  INFO 142006 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-10-14 08:25:40.839  INFO 142006 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-10-14 08:25:40.904  INFO 142006 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-14 08:25:40.943  INFO 142006 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
-2025-10-14 08:25:41.019  INFO 142006 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2025-10-14 08:25:41.073  INFO 142006 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2025-10-14 08:25:41.668  INFO 142006 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2025-10-14 08:25:41.673  INFO 142006 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-14 08:25:42.178  WARN 142006 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-14 08:25:42.475  WARN 142006 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+2025-10-14 09:51:21.756  INFO 175409 --- [           main] c.n.e.EcommerceCartApplication           : Starting EcommerceCartApplication using Java 11.0.28 on nakhan.org with PID 175409 (/home/nakhan/GITHUB/ecommerce-cart/target/classes started by nakhan in /home/nakhan/GITHUB/ecommerce-cart)
+2025-10-14 09:51:21.757 DEBUG 175409 --- [           main] c.n.e.EcommerceCartApplication           : Running with Spring Boot v2.7.0, Spring v5.3.20
+2025-10-14 09:51:21.757  INFO 175409 --- [           main] c.n.e.EcommerceCartApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-10-14 09:51:22.356  INFO 175409 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-14 09:51:22.402  INFO 175409 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 6 JPA repository interfaces.
+2025-10-14 09:51:23.039  INFO 175409 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-10-14 09:51:23.046  INFO 175409 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-14 09:51:23.047  INFO 175409 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-10-14 09:51:23.244  INFO 175409 --- [           main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-10-14 09:51:23.250  INFO 175409 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-14 09:51:23.250  INFO 175409 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1443 ms
+2025-10-14 09:51:23.414  INFO 175409 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-14 09:51:23.518  INFO 175409 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-14 09:51:23.573  INFO 175409 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-14 09:51:23.611  INFO 175409 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-10-14 09:51:23.697  INFO 175409 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-10-14 09:51:23.754  INFO 175409 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-10-14 09:51:24.384  INFO 175409 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-14 09:51:24.390  INFO 175409 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-14 09:51:25.130  WARN 175409 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: c94c3bbe-0fa1-408f-9113-8c2a9f4e9075
+Using generated security password: 8c90d1b6-b9c7-41da-85fc-aba1cef5de76
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-10-14 08:25:42.537  INFO 142006 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@53b9952f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bdddfa4, org.springframework.security.web.context.SecurityContextPersistenceFilter@71e55e48, org.springframework.security.web.header.HeaderWriterFilter@28c00acd, org.springframework.security.web.authentication.logout.LogoutFilter@231c521e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f01361e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@736a8aea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e12fdcf, org.springframework.security.web.session.SessionManagementFilter@51d2d336, org.springframework.security.web.access.ExceptionTranslationFilter@7e35d743, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e6f1f48]
-2025-10-14 08:25:42.637 DEBUG 142006 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-10-14 08:25:42.712 DEBUG 142006 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 101 mappings in 'requestMappingHandlerMapping'
-2025-10-14 08:25:42.729 DEBUG 142006 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**, /css/**, /js/**, /images/**, /favicon.ico] in 'resourceHandlerMapping'
-2025-10-14 08:25:42.738 DEBUG 142006 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-10-14 08:25:42.886  INFO 142006 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
-2025-10-14 08:25:42.938  INFO 142006 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2025-10-14 08:25:42.959  INFO 142006 --- [           main] c.n.e.EcommerceCartApplication           : Started EcommerceCartApplication in 4.108 seconds (JVM running for 4.364)
-2025-10-14 08:25:43.021  INFO 142006 --- [           main] c.n.e.config.DataInitializer             : Initializing sample data for E-commerce Cart System
-2025-10-14 08:25:43.021  INFO 142006 --- [           main] c.n.e.config.DataInitializer             : Initializing categories
-2025-10-14 08:25:43.028 DEBUG 142006 --- [           main] org.hibernate.SQL                        : 
+2025-10-14 09:51:25.188  INFO 175409 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@36c1b6ff, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b28ab9b, org.springframework.security.web.context.SecurityContextPersistenceFilter@4379fe2a, org.springframework.security.web.header.HeaderWriterFilter@530bd77b, org.springframework.security.web.authentication.logout.LogoutFilter@68838767, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e27325d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c7fd2e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16c1345b, org.springframework.security.web.session.SessionManagementFilter@5862ab28, org.springframework.security.web.access.ExceptionTranslationFilter@44a0e68f, org.springframework.security.web.access.intercept.AuthorizationFilter@3c981f76]
+2025-10-14 09:51:25.220  WARN 175409 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-14 09:51:25.312 DEBUG 175409 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-14 09:51:25.386 DEBUG 175409 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 102 mappings in 'requestMappingHandlerMapping'
+2025-10-14 09:51:25.406 DEBUG 175409 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**, /css/**, /js/**, /images/**, /favicon.ico] in 'resourceHandlerMapping'
+2025-10-14 09:51:25.417 DEBUG 175409 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-14 09:51:25.550  INFO 175409 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-10-14 09:51:25.591  INFO 175409 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-14 09:51:25.604  INFO 175409 --- [           main] c.n.e.EcommerceCartApplication           : Started EcommerceCartApplication in 4.152 seconds (JVM running for 4.415)
+2025-10-14 09:51:25.652  INFO 175409 --- [           main] c.n.e.config.DataInitializer             : Initializing sample data for E-commerce Cart System
+2025-10-14 09:51:25.652  INFO 175409 --- [           main] c.n.e.config.DataInitializer             : Initializing categories
+2025-10-14 09:51:25.659 DEBUG 175409 --- [           main] org.hibernate.SQL                        : 
     select
         count(*) as col_0_0_ 
     from
@@ -110,9 +108,9 @@ Hibernate:
         count(*) as col_0_0_ 
     from
         categories category0_
-2025-10-14 08:25:43.035  INFO 142006 --- [           main] c.n.e.config.DataInitializer             : Categories already exist, skipping category initialization
-2025-10-14 08:25:43.035  INFO 142006 --- [           main] c.n.e.config.DataInitializer             : Initializing products
-2025-10-14 08:25:43.036 DEBUG 142006 --- [           main] org.hibernate.SQL                        : 
+2025-10-14 09:51:25.666  INFO 175409 --- [           main] c.n.e.config.DataInitializer             : Categories already exist, skipping category initialization
+2025-10-14 09:51:25.666  INFO 175409 --- [           main] c.n.e.config.DataInitializer             : Initializing products
+2025-10-14 09:51:25.667 DEBUG 175409 --- [           main] org.hibernate.SQL                        : 
     select
         count(*) as col_0_0_ 
     from
@@ -122,9 +120,9 @@ Hibernate:
         count(*) as col_0_0_ 
     from
         products product0_
-2025-10-14 08:25:43.037  INFO 142006 --- [           main] c.n.e.config.DataInitializer             : Products already exist, skipping product initialization
-2025-10-14 08:25:43.038  INFO 142006 --- [           main] c.n.e.config.DataInitializer             : Initializing users
-2025-10-14 08:25:43.039 DEBUG 142006 --- [           main] org.hibernate.SQL                        : 
+2025-10-14 09:51:25.668  INFO 175409 --- [           main] c.n.e.config.DataInitializer             : Products already exist, skipping product initialization
+2025-10-14 09:51:25.668  INFO 175409 --- [           main] c.n.e.config.DataInitializer             : Initializing users
+2025-10-14 09:51:25.669 DEBUG 175409 --- [           main] org.hibernate.SQL                        : 
     select
         count(*) as col_0_0_ 
     from
@@ -134,26 +132,918 @@ Hibernate:
         count(*) as col_0_0_ 
     from
         users user0_
-2025-10-14 08:25:43.040  INFO 142006 --- [           main] c.n.e.config.DataInitializer             : Users already exist, skipping user initialization
-2025-10-14 08:25:43.040  INFO 142006 --- [           main] c.n.e.config.DataInitializer             : Initializing sample carts and orders
-2025-10-14 08:25:43.040  INFO 142006 --- [           main] c.n.e.config.DataInitializer             : Sample carts and orders initialization completed
-2025-10-14 08:25:43.041  INFO 142006 --- [           main] c.n.e.config.DataInitializer             : Sample data initialization completed successfully
-2025-10-14 08:25:43.043  INFO 142006 --- [           main] c.n.e.EcommerceCartApplication           : E-commerce Cart System started successfully!
-2025-10-14 08:25:43.043  INFO 142006 --- [           main] c.n.e.EcommerceCartApplication           : Application is running on: http://localhost:8080
-2025-10-14 08:25:43.043  INFO 142006 --- [           main] c.n.e.EcommerceCartApplication           : Database will be automatically configured and sample data loaded
-2025-10-14 08:25:44.124  INFO 142006 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-14 08:25:44.124  INFO 142006 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-10-14 08:25:44.124 DEBUG 142006 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-10-14 08:25:44.124 DEBUG 142006 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-10-14 08:25:44.124 DEBUG 142006 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-10-14 08:25:44.125 DEBUG 142006 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@78839c2e
-2025-10-14 08:25:44.125 DEBUG 142006 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5ff8d76f
-2025-10-14 08:25:44.126 DEBUG 142006 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-10-14 08:25:44.126  INFO 142006 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-10-14 08:25:44.140 DEBUG 142006 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/actuator/health", parameters={}
-2025-10-14 08:25:47.588 DEBUG 142006 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
-2025-10-14 08:25:47.637 DEBUG 142006 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [org.springframework.boot.actuate.health.SystemHealth@788e6c98]
-2025-10-14 08:25:47.650 DEBUG 142006 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-10-14 08:25:53.556  INFO 142006 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-10-14 08:25:53.560  INFO 142006 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-10-14 08:25:53.566  INFO 142006 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-14 09:51:25.671  INFO 175409 --- [           main] c.n.e.config.DataInitializer             : Users already exist, skipping user initialization
+2025-10-14 09:51:25.671  INFO 175409 --- [           main] c.n.e.config.DataInitializer             : Initializing sample carts and orders
+2025-10-14 09:51:25.671  INFO 175409 --- [           main] c.n.e.config.DataInitializer             : Sample carts and orders initialization completed
+2025-10-14 09:51:25.671  INFO 175409 --- [           main] c.n.e.config.DataInitializer             : Sample data initialization completed successfully
+2025-10-14 09:51:25.673  INFO 175409 --- [           main] c.n.e.EcommerceCartApplication           : E-commerce Cart System started successfully!
+2025-10-14 09:51:25.673  INFO 175409 --- [           main] c.n.e.EcommerceCartApplication           : Application is running on: http://localhost:8080
+2025-10-14 09:51:25.673  INFO 175409 --- [           main] c.n.e.EcommerceCartApplication           : Database will be automatically configured and sample data loaded
+2025-10-14 09:51:26.785  INFO 175409 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-14 09:51:26.785  INFO 175409 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-14 09:51:26.785 DEBUG 175409 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-10-14 09:51:26.785 DEBUG 175409 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-10-14 09:51:26.785 DEBUG 175409 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-10-14 09:51:26.786 DEBUG 175409 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@463746eb
+2025-10-14 09:51:26.786 DEBUG 175409 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@73483d4b
+2025-10-14 09:51:26.787 DEBUG 175409 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-14 09:51:26.787  INFO 175409 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-14 09:51:26.798 DEBUG 175409 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/actuator/health", parameters={}
+2025-10-14 09:51:30.298 DEBUG 175409 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2025-10-14 09:51:30.329 DEBUG 175409 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [org.springframework.boot.actuate.health.SystemHealth@34909711]
+2025-10-14 09:51:30.343 DEBUG 175409 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-14 09:51:36.648 DEBUG 175409 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2025-10-14 09:51:36.649 DEBUG 175409 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nakhandev.ecommercecart.controller.HomeController#home(Model)
+2025-10-14 09:51:36.654  INFO 175409 --- [nio-8080-exec-2] c.n.e.controller.HomeController          : Serving home page
+2025-10-14 09:51:36.662 DEBUG 175409 --- [nio-8080-exec-2] c.n.e.service.impl.ProductServiceImpl    : Finding featured products
+2025-10-14 09:51:36.670 DEBUG 175409 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_6_,
+        product0_.category_id as categor18_6_,
+        product0_.created_at as created_2_6_,
+        product0_.dimensions_height as dimensio3_6_,
+        product0_.dimensions_length as dimensio4_6_,
+        product0_.dimensions_width as dimensio5_6_,
+        product0_.discount_percentage as discount6_6_,
+        product0_.image_url as image_ur7_6_,
+        product0_.is_active as is_activ8_6_,
+        product0_.is_featured as is_featu9_6_,
+        product0_.long_description as long_de10_6_,
+        product0_.name as name11_6_,
+        product0_.price as price12_6_,
+        product0_.short_description as short_d13_6_,
+        product0_.sku as sku14_6_,
+        product0_.stock_quantity as stock_q15_6_,
+        product0_.updated_at as updated16_6_,
+        product0_.weight_kg as weight_17_6_ 
+    from
+        products product0_ 
+    where
+        product0_.is_featured=1 
+        and product0_.is_active=1
+Hibernate: 
+    select
+        product0_.id as id1_6_,
+        product0_.category_id as categor18_6_,
+        product0_.created_at as created_2_6_,
+        product0_.dimensions_height as dimensio3_6_,
+        product0_.dimensions_length as dimensio4_6_,
+        product0_.dimensions_width as dimensio5_6_,
+        product0_.discount_percentage as discount6_6_,
+        product0_.image_url as image_ur7_6_,
+        product0_.is_active as is_activ8_6_,
+        product0_.is_featured as is_featu9_6_,
+        product0_.long_description as long_de10_6_,
+        product0_.name as name11_6_,
+        product0_.price as price12_6_,
+        product0_.short_description as short_d13_6_,
+        product0_.sku as sku14_6_,
+        product0_.stock_quantity as stock_q15_6_,
+        product0_.updated_at as updated16_6_,
+        product0_.weight_kg as weight_17_6_ 
+    from
+        products product0_ 
+    where
+        product0_.is_featured=1 
+        and product0_.is_active=1
+2025-10-14 09:51:36.674  INFO 175409 --- [nio-8080-exec-2] c.n.e.controller.HomeController          : Home page loaded successfully with 0 featured products
+2025-10-14 09:51:36.681 DEBUG 175409 --- [nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8]
+2025-10-14 09:51:36.682 DEBUG 175409 --- [nio-8080-exec-2] o.s.web.servlet.view.JstlView            : View name 'public/index', model {featuredProducts=[]}
+2025-10-14 09:51:36.685 DEBUG 175409 --- [nio-8080-exec-2] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/public/index.jsp]
+2025-10-14 09:51:37.434 DEBUG 175409 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-14 09:51:38.124 DEBUG 175409 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/static/images/favicon.svg", parameters={}
+2025-10-14 09:51:38.133 DEBUG 175409 --- [nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/], URL [file:src/main/webapp/static/]]
+2025-10-14 09:51:38.149 DEBUG 175409 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-14 09:51:46.693 DEBUG 175409 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/products", parameters={}
+2025-10-14 09:51:46.695 DEBUG 175409 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nakhandev.ecommercecart.controller.HomeController#products(Model)
+2025-10-14 09:51:46.696  INFO 175409 --- [nio-8080-exec-4] c.n.e.controller.HomeController          : Serving products page
+2025-10-14 09:51:46.698 DEBUG 175409 --- [nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8]
+2025-10-14 09:51:46.698 DEBUG 175409 --- [nio-8080-exec-4] o.s.web.servlet.view.JstlView            : View name 'products/index', model {}
+2025-10-14 09:51:46.699 DEBUG 175409 --- [nio-8080-exec-4] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/products/index.jsp]
+2025-10-14 09:51:46.829 DEBUG 175409 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-14 09:51:46.931 DEBUG 175409 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/categories", parameters={}
+2025-10-14 09:51:46.932 DEBUG 175409 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nakhandev.ecommercecart.controller.CategoryController#getAllCategories(int, int)
+2025-10-14 09:51:46.937 DEBUG 175409 --- [nio-8080-exec-5] c.n.e.controller.common.BaseController   : Entering getAllCategories with params: [0, 10]
+2025-10-14 09:51:46.944 DEBUG 175409 --- [nio-8080-exec-5] c.n.e.service.impl.CategoryServiceImpl   : Finding all categories with pagination
+2025-10-14 09:51:46.959 DEBUG 175409 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        category0_.id as id1_2_,
+        category0_.created_at as created_2_2_,
+        category0_.description as descript3_2_,
+        category0_.display_order as display_4_2_,
+        category0_.image_url as image_ur5_2_,
+        category0_.is_active as is_activ6_2_,
+        category0_.name as name7_2_,
+        category0_.updated_at as updated_8_2_ 
+    from
+        categories category0_ limit ?
+Hibernate: 
+    select
+        category0_.id as id1_2_,
+        category0_.created_at as created_2_2_,
+        category0_.description as descript3_2_,
+        category0_.display_order as display_4_2_,
+        category0_.image_url as image_ur5_2_,
+        category0_.is_active as is_activ6_2_,
+        category0_.name as name7_2_,
+        category0_.updated_at as updated_8_2_ 
+    from
+        categories category0_ limit ?
+2025-10-14 09:51:46.964 DEBUG 175409 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/cart/count?userId=guest_1760415706935_6pzv6hdvj", parameters={masked}
+2025-10-14 09:51:46.964 DEBUG 175409 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nakhandev.ecommercecart.controller.CartController#getCartItemCount(Long)
+2025-10-14 09:51:46.965 DEBUG 175409 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/products?sortBy=name&featuredOnly=false&onSaleOnly=false&inStockOnly=false&page=0&size=12", parameters={masked}
+2025-10-14 09:51:46.965 DEBUG 175409 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nakhandev.ecommercecart.controller.ProductController#getAllProducts(int, int)
+2025-10-14 09:51:46.968 DEBUG 175409 --- [nio-8080-exec-7] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<com.nakhandev.ecommercecart.dto.common.ApiResponse<java.lang.Integer>> com.nakhandev.ecommercecart.controller.CartController.getCartItemCount(java.lang.Long): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "guest_1760415706935_6pzv6hdvj"
+2025-10-14 09:51:46.968 DEBUG 175409 --- [nio-8080-exec-6] c.n.e.controller.common.BaseController   : Entering getAllProducts with params: [0, 12]
+2025-10-14 09:51:46.973 DEBUG 175409 --- [nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.nakhandev.ecommercecart.exception.GlobalExceptionHandler#handleMethodArgumentTypeMismatchException(MethodArgumentTypeMismatchException)
+2025-10-14 09:51:46.975 DEBUG 175409 --- [nio-8080-exec-6] c.n.e.service.impl.ProductServiceImpl    : Finding all active products with pagination
+2025-10-14 09:51:46.981 DEBUG 175409 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_6_,
+        product0_.category_id as categor18_6_,
+        product0_.created_at as created_2_6_,
+        product0_.dimensions_height as dimensio3_6_,
+        product0_.dimensions_length as dimensio4_6_,
+        product0_.dimensions_width as dimensio5_6_,
+        product0_.discount_percentage as discount6_6_,
+        product0_.image_url as image_ur7_6_,
+        product0_.is_active as is_activ8_6_,
+        product0_.is_featured as is_featu9_6_,
+        product0_.long_description as long_de10_6_,
+        product0_.name as name11_6_,
+        product0_.price as price12_6_,
+        product0_.short_description as short_d13_6_,
+        product0_.sku as sku14_6_,
+        product0_.stock_quantity as stock_q15_6_,
+        product0_.updated_at as updated16_6_,
+        product0_.weight_kg as weight_17_6_ 
+    from
+        products product0_ 
+    where
+        product0_.is_active=1 limit ?
+Hibernate: 
+    select
+        product0_.id as id1_6_,
+        product0_.category_id as categor18_6_,
+        product0_.created_at as created_2_6_,
+        product0_.dimensions_height as dimensio3_6_,
+        product0_.dimensions_length as dimensio4_6_,
+        product0_.dimensions_width as dimensio5_6_,
+        product0_.discount_percentage as discount6_6_,
+        product0_.image_url as image_ur7_6_,
+        product0_.is_active as is_activ8_6_,
+        product0_.is_featured as is_featu9_6_,
+        product0_.long_description as long_de10_6_,
+        product0_.name as name11_6_,
+        product0_.price as price12_6_,
+        product0_.short_description as short_d13_6_,
+        product0_.sku as sku14_6_,
+        product0_.stock_quantity as stock_q15_6_,
+        product0_.updated_at as updated16_6_,
+        product0_.weight_kg as weight_17_6_ 
+    from
+        products product0_ 
+    where
+        product0_.is_active=1 limit ?
+2025-10-14 09:51:46.988 ERROR 175409 --- [nio-8080-exec-7] c.n.e.exception.GlobalExceptionHandler   : Method argument type mismatch
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "guest_1760415706935_6pzv6hdvj"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.63.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.63.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilterInternal(AuthorizationFilter.java:73) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.7.0.jar:2.7.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.lang.NumberFormatException: For input string: "guest_1760415706935_6pzv6hdvj"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:na]
+	at java.base/java.lang.Long.parseLong(Long.java:692) ~[na:na]
+	at java.base/java.lang.Long.valueOf(Long.java:1144) ~[na:na]
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125) ~[spring-web-5.3.20.jar:5.3.20]
+	... 89 common frames omitted
+
+2025-10-14 09:51:47.008 DEBUG 175409 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        products0_.category_id as categor18_6_0_,
+        products0_.id as id1_6_0_,
+        products0_.id as id1_6_1_,
+        products0_.category_id as categor18_6_1_,
+        products0_.created_at as created_2_6_1_,
+        products0_.dimensions_height as dimensio3_6_1_,
+        products0_.dimensions_length as dimensio4_6_1_,
+        products0_.dimensions_width as dimensio5_6_1_,
+        products0_.discount_percentage as discount6_6_1_,
+        products0_.image_url as image_ur7_6_1_,
+        products0_.is_active as is_activ8_6_1_,
+        products0_.is_featured as is_featu9_6_1_,
+        products0_.long_description as long_de10_6_1_,
+        products0_.name as name11_6_1_,
+        products0_.price as price12_6_1_,
+        products0_.short_description as short_d13_6_1_,
+        products0_.sku as sku14_6_1_,
+        products0_.stock_quantity as stock_q15_6_1_,
+        products0_.updated_at as updated16_6_1_,
+        products0_.weight_kg as weight_17_6_1_ 
+    from
+        products products0_ 
+    where
+        products0_.category_id=?
+Hibernate: 
+    select
+        products0_.category_id as categor18_6_0_,
+        products0_.id as id1_6_0_,
+        products0_.id as id1_6_1_,
+        products0_.category_id as categor18_6_1_,
+        products0_.created_at as created_2_6_1_,
+        products0_.dimensions_height as dimensio3_6_1_,
+        products0_.dimensions_length as dimensio4_6_1_,
+        products0_.dimensions_width as dimensio5_6_1_,
+        products0_.discount_percentage as discount6_6_1_,
+        products0_.image_url as image_ur7_6_1_,
+        products0_.is_active as is_activ8_6_1_,
+        products0_.is_featured as is_featu9_6_1_,
+        products0_.long_description as long_de10_6_1_,
+        products0_.name as name11_6_1_,
+        products0_.price as price12_6_1_,
+        products0_.short_description as short_d13_6_1_,
+        products0_.sku as sku14_6_1_,
+        products0_.stock_quantity as stock_q15_6_1_,
+        products0_.updated_at as updated16_6_1_,
+        products0_.weight_kg as weight_17_6_1_ 
+    from
+        products products0_ 
+    where
+        products0_.category_id=?
+2025-10-14 09:51:47.010 TRACE 175409 --- [nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2025-10-14 09:51:47.013 DEBUG 175409 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        category0_.id as id1_2_0_,
+        category0_.created_at as created_2_2_0_,
+        category0_.description as descript3_2_0_,
+        category0_.display_order as display_4_2_0_,
+        category0_.image_url as image_ur5_2_0_,
+        category0_.is_active as is_activ6_2_0_,
+        category0_.name as name7_2_0_,
+        category0_.updated_at as updated_8_2_0_ 
+    from
+        categories category0_ 
+    where
+        category0_.id=?
+Hibernate: 
+    select
+        category0_.id as id1_2_0_,
+        category0_.created_at as created_2_2_0_,
+        category0_.description as descript3_2_0_,
+        category0_.display_order as display_4_2_0_,
+        category0_.image_url as image_ur5_2_0_,
+        category0_.is_active as is_activ6_2_0_,
+        category0_.name as name7_2_0_,
+        category0_.updated_at as updated_8_2_0_ 
+    from
+        categories category0_ 
+    where
+        category0_.id=?
+2025-10-14 09:51:47.014 TRACE 175409 --- [nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2025-10-14 09:51:47.018 DEBUG 175409 --- [nio-8080-exec-5] c.n.e.controller.common.BaseController   : Exiting getAllCategories with result: [com.nakhandev.ecommercecart.dto.category.CategorySummaryDTO@55cc8ffb]
+2025-10-14 09:51:47.018 DEBUG 175409 --- [nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-10-14 09:51:47.018 DEBUG 175409 --- [nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.nakhandev.ecommercecart.dto.common.ApiResponse@2a6d35b4]
+2025-10-14 09:51:47.019 DEBUG 175409 --- [nio-8080-exec-6] c.n.e.controller.common.BaseController   : Exiting getAllProducts with result: [com.nakhandev.ecommercecart.dto.product.ProductSummaryDTO@89af5bb]
+2025-10-14 09:51:47.020 DEBUG 175409 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-10-14 09:51:47.020 DEBUG 175409 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-10-14 09:51:47.020 DEBUG 175409 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.nakhandev.ecommercecart.dto.common.ApiResponse@30d16a07]
+2025-10-14 09:51:47.020 DEBUG 175409 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.nakhandev.ecommercecart.dto.common.ApiResponse@624c6ce4]
+2025-10-14 09:51:47.022 DEBUG 175409 --- [nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "guest_1760415706935_6pzv6hdvj"]
+2025-10-14 09:51:47.023 DEBUG 175409 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-10-14 09:51:47.027 DEBUG 175409 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-14 09:51:47.036 DEBUG 175409 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-14 09:51:58.618 DEBUG 175409 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2025-10-14 09:51:58.619 DEBUG 175409 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nakhandev.ecommercecart.controller.HomeController#home(Model)
+2025-10-14 09:51:58.621  INFO 175409 --- [io-8080-exec-10] c.n.e.controller.HomeController          : Serving home page
+2025-10-14 09:51:58.623 DEBUG 175409 --- [io-8080-exec-10] c.n.e.service.impl.ProductServiceImpl    : Finding featured products
+2025-10-14 09:51:58.623 DEBUG 175409 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_6_,
+        product0_.category_id as categor18_6_,
+        product0_.created_at as created_2_6_,
+        product0_.dimensions_height as dimensio3_6_,
+        product0_.dimensions_length as dimensio4_6_,
+        product0_.dimensions_width as dimensio5_6_,
+        product0_.discount_percentage as discount6_6_,
+        product0_.image_url as image_ur7_6_,
+        product0_.is_active as is_activ8_6_,
+        product0_.is_featured as is_featu9_6_,
+        product0_.long_description as long_de10_6_,
+        product0_.name as name11_6_,
+        product0_.price as price12_6_,
+        product0_.short_description as short_d13_6_,
+        product0_.sku as sku14_6_,
+        product0_.stock_quantity as stock_q15_6_,
+        product0_.updated_at as updated16_6_,
+        product0_.weight_kg as weight_17_6_ 
+    from
+        products product0_ 
+    where
+        product0_.is_featured=1 
+        and product0_.is_active=1
+Hibernate: 
+    select
+        product0_.id as id1_6_,
+        product0_.category_id as categor18_6_,
+        product0_.created_at as created_2_6_,
+        product0_.dimensions_height as dimensio3_6_,
+        product0_.dimensions_length as dimensio4_6_,
+        product0_.dimensions_width as dimensio5_6_,
+        product0_.discount_percentage as discount6_6_,
+        product0_.image_url as image_ur7_6_,
+        product0_.is_active as is_activ8_6_,
+        product0_.is_featured as is_featu9_6_,
+        product0_.long_description as long_de10_6_,
+        product0_.name as name11_6_,
+        product0_.price as price12_6_,
+        product0_.short_description as short_d13_6_,
+        product0_.sku as sku14_6_,
+        product0_.stock_quantity as stock_q15_6_,
+        product0_.updated_at as updated16_6_,
+        product0_.weight_kg as weight_17_6_ 
+    from
+        products product0_ 
+    where
+        product0_.is_featured=1 
+        and product0_.is_active=1
+2025-10-14 09:51:58.626  INFO 175409 --- [io-8080-exec-10] c.n.e.controller.HomeController          : Home page loaded successfully with 0 featured products
+2025-10-14 09:51:58.627 DEBUG 175409 --- [io-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8]
+2025-10-14 09:51:58.627 DEBUG 175409 --- [io-8080-exec-10] o.s.web.servlet.view.JstlView            : View name 'public/index', model {featuredProducts=[]}
+2025-10-14 09:51:58.627 DEBUG 175409 --- [io-8080-exec-10] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/public/index.jsp]
+2025-10-14 09:51:58.632 DEBUG 175409 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-14 09:51:58.939 DEBUG 175409 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/static/css/custom.css", parameters={}
+2025-10-14 09:51:58.941 DEBUG 175409 --- [nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/], URL [file:src/main/webapp/static/]]
+2025-10-14 09:51:58.944 DEBUG 175409 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.apache.catalina.connector.ClientAbortException: java.io.IOException: Broken pipe
+2025-10-14 09:52:02.219 DEBUG 175409 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/categories/1", parameters={}
+2025-10-14 09:52:02.221 DEBUG 175409 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nakhandev.ecommercecart.controller.HomeController#categoryDetail(Long, Model)
+2025-10-14 09:52:02.227  INFO 175409 --- [nio-8080-exec-2] c.n.e.controller.HomeController          : Serving category detail page for category ID: 1
+2025-10-14 09:52:02.229 DEBUG 175409 --- [nio-8080-exec-2] c.n.e.service.impl.CategoryServiceImpl   : Finding category by ID: 1
+2025-10-14 09:52:02.233 DEBUG 175409 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        category0_.id as id1_2_0_,
+        category0_.created_at as created_2_2_0_,
+        category0_.description as descript3_2_0_,
+        category0_.display_order as display_4_2_0_,
+        category0_.image_url as image_ur5_2_0_,
+        category0_.is_active as is_activ6_2_0_,
+        category0_.name as name7_2_0_,
+        category0_.updated_at as updated_8_2_0_ 
+    from
+        categories category0_ 
+    where
+        category0_.id=?
+Hibernate: 
+    select
+        category0_.id as id1_2_0_,
+        category0_.created_at as created_2_2_0_,
+        category0_.description as descript3_2_0_,
+        category0_.display_order as display_4_2_0_,
+        category0_.image_url as image_ur5_2_0_,
+        category0_.is_active as is_activ6_2_0_,
+        category0_.name as name7_2_0_,
+        category0_.updated_at as updated_8_2_0_ 
+    from
+        categories category0_ 
+    where
+        category0_.id=?
+2025-10-14 09:52:02.234 TRACE 175409 --- [nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2025-10-14 09:52:02.238  INFO 175409 --- [nio-8080-exec-2] c.n.e.controller.HomeController          : Category detail page loaded successfully for category: Test Electronics
+2025-10-14 09:52:02.239 DEBUG 175409 --- [nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8]
+2025-10-14 09:52:02.239 DEBUG 175409 --- [nio-8080-exec-2] o.s.web.servlet.view.JstlView            : View name 'categories/detail', model {category=com.nakhandev.ecommercecart.model.Category@355740b0, org.springframework.validation.BindingResult.category=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2025-10-14 09:52:02.239 DEBUG 175409 --- [nio-8080-exec-2] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/categories/detail.jsp]
+2025-10-14 09:52:02.331 DEBUG 175409 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-14 09:52:08.451 DEBUG 175409 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2025-10-14 09:52:08.452 DEBUG 175409 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nakhandev.ecommercecart.controller.HomeController#home(Model)
+2025-10-14 09:52:08.453  INFO 175409 --- [nio-8080-exec-3] c.n.e.controller.HomeController          : Serving home page
+2025-10-14 09:52:08.455 DEBUG 175409 --- [nio-8080-exec-3] c.n.e.service.impl.ProductServiceImpl    : Finding featured products
+2025-10-14 09:52:08.456 DEBUG 175409 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_6_,
+        product0_.category_id as categor18_6_,
+        product0_.created_at as created_2_6_,
+        product0_.dimensions_height as dimensio3_6_,
+        product0_.dimensions_length as dimensio4_6_,
+        product0_.dimensions_width as dimensio5_6_,
+        product0_.discount_percentage as discount6_6_,
+        product0_.image_url as image_ur7_6_,
+        product0_.is_active as is_activ8_6_,
+        product0_.is_featured as is_featu9_6_,
+        product0_.long_description as long_de10_6_,
+        product0_.name as name11_6_,
+        product0_.price as price12_6_,
+        product0_.short_description as short_d13_6_,
+        product0_.sku as sku14_6_,
+        product0_.stock_quantity as stock_q15_6_,
+        product0_.updated_at as updated16_6_,
+        product0_.weight_kg as weight_17_6_ 
+    from
+        products product0_ 
+    where
+        product0_.is_featured=1 
+        and product0_.is_active=1
+Hibernate: 
+    select
+        product0_.id as id1_6_,
+        product0_.category_id as categor18_6_,
+        product0_.created_at as created_2_6_,
+        product0_.dimensions_height as dimensio3_6_,
+        product0_.dimensions_length as dimensio4_6_,
+        product0_.dimensions_width as dimensio5_6_,
+        product0_.discount_percentage as discount6_6_,
+        product0_.image_url as image_ur7_6_,
+        product0_.is_active as is_activ8_6_,
+        product0_.is_featured as is_featu9_6_,
+        product0_.long_description as long_de10_6_,
+        product0_.name as name11_6_,
+        product0_.price as price12_6_,
+        product0_.short_description as short_d13_6_,
+        product0_.sku as sku14_6_,
+        product0_.stock_quantity as stock_q15_6_,
+        product0_.updated_at as updated16_6_,
+        product0_.weight_kg as weight_17_6_ 
+    from
+        products product0_ 
+    where
+        product0_.is_featured=1 
+        and product0_.is_active=1
+2025-10-14 09:52:08.463  INFO 175409 --- [nio-8080-exec-3] c.n.e.controller.HomeController          : Home page loaded successfully with 0 featured products
+2025-10-14 09:52:08.464 DEBUG 175409 --- [nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8]
+2025-10-14 09:52:08.464 DEBUG 175409 --- [nio-8080-exec-3] o.s.web.servlet.view.JstlView            : View name 'public/index', model {featuredProducts=[]}
+2025-10-14 09:52:08.465 DEBUG 175409 --- [nio-8080-exec-3] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/public/index.jsp]
+2025-10-14 09:52:08.469 DEBUG 175409 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-14 09:52:12.419 DEBUG 175409 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/products", parameters={}
+2025-10-14 09:52:12.422 DEBUG 175409 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nakhandev.ecommercecart.controller.HomeController#products(Model)
+2025-10-14 09:52:12.423  INFO 175409 --- [nio-8080-exec-4] c.n.e.controller.HomeController          : Serving products page
+2025-10-14 09:52:12.426 DEBUG 175409 --- [nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8]
+2025-10-14 09:52:12.426 DEBUG 175409 --- [nio-8080-exec-4] o.s.web.servlet.view.JstlView            : View name 'products/index', model {}
+2025-10-14 09:52:12.427 DEBUG 175409 --- [nio-8080-exec-4] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/products/index.jsp]
+2025-10-14 09:52:12.438 DEBUG 175409 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-14 09:52:12.567 DEBUG 175409 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/categories", parameters={}
+2025-10-14 09:52:12.568 DEBUG 175409 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nakhandev.ecommercecart.controller.CategoryController#getAllCategories(int, int)
+2025-10-14 09:52:12.572 DEBUG 175409 --- [nio-8080-exec-7] c.n.e.controller.common.BaseController   : Entering getAllCategories with params: [0, 10]
+2025-10-14 09:52:12.573 DEBUG 175409 --- [nio-8080-exec-7] c.n.e.service.impl.CategoryServiceImpl   : Finding all categories with pagination
+2025-10-14 09:52:12.574 DEBUG 175409 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        category0_.id as id1_2_,
+        category0_.created_at as created_2_2_,
+        category0_.description as descript3_2_,
+        category0_.display_order as display_4_2_,
+        category0_.image_url as image_ur5_2_,
+        category0_.is_active as is_activ6_2_,
+        category0_.name as name7_2_,
+        category0_.updated_at as updated_8_2_ 
+    from
+        categories category0_ limit ?
+Hibernate: 
+    select
+        category0_.id as id1_2_,
+        category0_.created_at as created_2_2_,
+        category0_.description as descript3_2_,
+        category0_.display_order as display_4_2_,
+        category0_.image_url as image_ur5_2_,
+        category0_.is_active as is_activ6_2_,
+        category0_.name as name7_2_,
+        category0_.updated_at as updated_8_2_ 
+    from
+        categories category0_ limit ?
+2025-10-14 09:52:12.578 DEBUG 175409 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/products?sortBy=name&featuredOnly=false&onSaleOnly=false&inStockOnly=false&page=0&size=12", parameters={masked}
+2025-10-14 09:52:12.578 DEBUG 175409 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        products0_.category_id as categor18_6_0_,
+        products0_.id as id1_6_0_,
+        products0_.id as id1_6_1_,
+        products0_.category_id as categor18_6_1_,
+        products0_.created_at as created_2_6_1_,
+        products0_.dimensions_height as dimensio3_6_1_,
+        products0_.dimensions_length as dimensio4_6_1_,
+        products0_.dimensions_width as dimensio5_6_1_,
+        products0_.discount_percentage as discount6_6_1_,
+        products0_.image_url as image_ur7_6_1_,
+        products0_.is_active as is_activ8_6_1_,
+        products0_.is_featured as is_featu9_6_1_,
+        products0_.long_description as long_de10_6_1_,
+        products0_.name as name11_6_1_,
+        products0_.price as price12_6_1_,
+        products0_.short_description as short_d13_6_1_,
+        products0_.sku as sku14_6_1_,
+        products0_.stock_quantity as stock_q15_6_1_,
+        products0_.updated_at as updated16_6_1_,
+        products0_.weight_kg as weight_17_6_1_ 
+    from
+        products products0_ 
+    where
+        products0_.category_id=?
+Hibernate: 
+    select
+        products0_.category_id as categor18_6_0_,
+        products0_.id as id1_6_0_,
+        products0_.id as id1_6_1_,
+        products0_.category_id as categor18_6_1_,
+        products0_.created_at as created_2_6_1_,
+        products0_.dimensions_height as dimensio3_6_1_,
+        products0_.dimensions_length as dimensio4_6_1_,
+        products0_.dimensions_width as dimensio5_6_1_,
+        products0_.discount_percentage as discount6_6_1_,
+        products0_.image_url as image_ur7_6_1_,
+        products0_.is_active as is_activ8_6_1_,
+        products0_.is_featured as is_featu9_6_1_,
+        products0_.long_description as long_de10_6_1_,
+        products0_.name as name11_6_1_,
+        products0_.price as price12_6_1_,
+        products0_.short_description as short_d13_6_1_,
+        products0_.sku as sku14_6_1_,
+        products0_.stock_quantity as stock_q15_6_1_,
+        products0_.updated_at as updated16_6_1_,
+        products0_.weight_kg as weight_17_6_1_ 
+    from
+        products products0_ 
+    where
+        products0_.category_id=?
+2025-10-14 09:52:12.578 DEBUG 175409 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nakhandev.ecommercecart.controller.ProductController#getAllProducts(int, int)
+2025-10-14 09:52:12.579 TRACE 175409 --- [nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2025-10-14 09:52:12.581 DEBUG 175409 --- [nio-8080-exec-7] c.n.e.controller.common.BaseController   : Exiting getAllCategories with result: [com.nakhandev.ecommercecart.dto.category.CategorySummaryDTO@33f43289]
+2025-10-14 09:52:12.582 DEBUG 175409 --- [nio-8080-exec-5] c.n.e.controller.common.BaseController   : Entering getAllProducts with params: [0, 12]
+2025-10-14 09:52:12.582 DEBUG 175409 --- [nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-10-14 09:52:12.583 DEBUG 175409 --- [nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.nakhandev.ecommercecart.dto.common.ApiResponse@3c7e5302]
+2025-10-14 09:52:12.584 DEBUG 175409 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-14 09:52:12.585 DEBUG 175409 --- [nio-8080-exec-5] c.n.e.service.impl.ProductServiceImpl    : Finding all active products with pagination
+2025-10-14 09:52:12.587 DEBUG 175409 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_6_,
+        product0_.category_id as categor18_6_,
+        product0_.created_at as created_2_6_,
+        product0_.dimensions_height as dimensio3_6_,
+        product0_.dimensions_length as dimensio4_6_,
+        product0_.dimensions_width as dimensio5_6_,
+        product0_.discount_percentage as discount6_6_,
+        product0_.image_url as image_ur7_6_,
+        product0_.is_active as is_activ8_6_,
+        product0_.is_featured as is_featu9_6_,
+        product0_.long_description as long_de10_6_,
+        product0_.name as name11_6_,
+        product0_.price as price12_6_,
+        product0_.short_description as short_d13_6_,
+        product0_.sku as sku14_6_,
+        product0_.stock_quantity as stock_q15_6_,
+        product0_.updated_at as updated16_6_,
+        product0_.weight_kg as weight_17_6_ 
+    from
+        products product0_ 
+    where
+        product0_.is_active=1 limit ?
+Hibernate: 
+    select
+        product0_.id as id1_6_,
+        product0_.category_id as categor18_6_,
+        product0_.created_at as created_2_6_,
+        product0_.dimensions_height as dimensio3_6_,
+        product0_.dimensions_length as dimensio4_6_,
+        product0_.dimensions_width as dimensio5_6_,
+        product0_.discount_percentage as discount6_6_,
+        product0_.image_url as image_ur7_6_,
+        product0_.is_active as is_activ8_6_,
+        product0_.is_featured as is_featu9_6_,
+        product0_.long_description as long_de10_6_,
+        product0_.name as name11_6_,
+        product0_.price as price12_6_,
+        product0_.short_description as short_d13_6_,
+        product0_.sku as sku14_6_,
+        product0_.stock_quantity as stock_q15_6_,
+        product0_.updated_at as updated16_6_,
+        product0_.weight_kg as weight_17_6_ 
+    from
+        products product0_ 
+    where
+        product0_.is_active=1 limit ?
+2025-10-14 09:52:12.591 DEBUG 175409 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/cart/count?userId=guest_1760415732564_tdks7radx", parameters={masked}
+2025-10-14 09:52:12.592 DEBUG 175409 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nakhandev.ecommercecart.controller.CartController#getCartItemCount(Long)
+2025-10-14 09:52:12.594 DEBUG 175409 --- [nio-8080-exec-6] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<com.nakhandev.ecommercecart.dto.common.ApiResponse<java.lang.Integer>> com.nakhandev.ecommercecart.controller.CartController.getCartItemCount(java.lang.Long): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "guest_1760415732564_tdks7radx"
+2025-10-14 09:52:12.594 DEBUG 175409 --- [nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.nakhandev.ecommercecart.exception.GlobalExceptionHandler#handleMethodArgumentTypeMismatchException(MethodArgumentTypeMismatchException)
+2025-10-14 09:52:12.596 ERROR 175409 --- [nio-8080-exec-6] c.n.e.exception.GlobalExceptionHandler   : Method argument type mismatch
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "guest_1760415732564_tdks7radx"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.63.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.63.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilterInternal(AuthorizationFilter.java:73) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.7.1.jar:5.7.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.7.0.jar:2.7.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.lang.NumberFormatException: For input string: "guest_1760415732564_tdks7radx"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:na]
+	at java.base/java.lang.Long.parseLong(Long.java:692) ~[na:na]
+	at java.base/java.lang.Long.valueOf(Long.java:1144) ~[na:na]
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125) ~[spring-web-5.3.20.jar:5.3.20]
+	... 89 common frames omitted
+
+2025-10-14 09:52:12.600 DEBUG 175409 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-10-14 09:52:12.600 DEBUG 175409 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.nakhandev.ecommercecart.dto.common.ApiResponse@29bb3c8f]
+2025-10-14 09:52:12.602 DEBUG 175409 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        category0_.id as id1_2_0_,
+        category0_.created_at as created_2_2_0_,
+        category0_.description as descript3_2_0_,
+        category0_.display_order as display_4_2_0_,
+        category0_.image_url as image_ur5_2_0_,
+        category0_.is_active as is_activ6_2_0_,
+        category0_.name as name7_2_0_,
+        category0_.updated_at as updated_8_2_0_ 
+    from
+        categories category0_ 
+    where
+        category0_.id=?
+Hibernate: 
+    select
+        category0_.id as id1_2_0_,
+        category0_.created_at as created_2_2_0_,
+        category0_.description as descript3_2_0_,
+        category0_.display_order as display_4_2_0_,
+        category0_.image_url as image_ur5_2_0_,
+        category0_.is_active as is_activ6_2_0_,
+        category0_.name as name7_2_0_,
+        category0_.updated_at as updated_8_2_0_ 
+    from
+        categories category0_ 
+    where
+        category0_.id=?
+2025-10-14 09:52:12.602 DEBUG 175409 --- [nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "guest_1760415732564_tdks7radx"]
+2025-10-14 09:52:12.602 DEBUG 175409 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-10-14 09:52:12.602 TRACE 175409 --- [nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2025-10-14 09:52:12.605 DEBUG 175409 --- [nio-8080-exec-5] c.n.e.controller.common.BaseController   : Exiting getAllProducts with result: [com.nakhandev.ecommercecart.dto.product.ProductSummaryDTO@547fcc49]
+2025-10-14 09:52:12.606 DEBUG 175409 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-10-14 09:52:12.606 DEBUG 175409 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.nakhandev.ecommercecart.dto.common.ApiResponse@5849e464]
+2025-10-14 09:52:12.608 DEBUG 175409 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-14 09:52:15.215 DEBUG 175409 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/products?sortBy=name&featuredOnly=false&onSaleOnly=false&inStockOnly=false&page=0&size=12", parameters={masked}
+2025-10-14 09:52:15.217 DEBUG 175409 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nakhandev.ecommercecart.controller.ProductController#getAllProducts(int, int)
+2025-10-14 09:52:15.222 DEBUG 175409 --- [nio-8080-exec-8] c.n.e.controller.common.BaseController   : Entering getAllProducts with params: [0, 12]
+2025-10-14 09:52:15.226 DEBUG 175409 --- [nio-8080-exec-8] c.n.e.service.impl.ProductServiceImpl    : Finding all active products with pagination
+2025-10-14 09:52:15.227 DEBUG 175409 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_6_,
+        product0_.category_id as categor18_6_,
+        product0_.created_at as created_2_6_,
+        product0_.dimensions_height as dimensio3_6_,
+        product0_.dimensions_length as dimensio4_6_,
+        product0_.dimensions_width as dimensio5_6_,
+        product0_.discount_percentage as discount6_6_,
+        product0_.image_url as image_ur7_6_,
+        product0_.is_active as is_activ8_6_,
+        product0_.is_featured as is_featu9_6_,
+        product0_.long_description as long_de10_6_,
+        product0_.name as name11_6_,
+        product0_.price as price12_6_,
+        product0_.short_description as short_d13_6_,
+        product0_.sku as sku14_6_,
+        product0_.stock_quantity as stock_q15_6_,
+        product0_.updated_at as updated16_6_,
+        product0_.weight_kg as weight_17_6_ 
+    from
+        products product0_ 
+    where
+        product0_.is_active=1 limit ?
+Hibernate: 
+    select
+        product0_.id as id1_6_,
+        product0_.category_id as categor18_6_,
+        product0_.created_at as created_2_6_,
+        product0_.dimensions_height as dimensio3_6_,
+        product0_.dimensions_length as dimensio4_6_,
+        product0_.dimensions_width as dimensio5_6_,
+        product0_.discount_percentage as discount6_6_,
+        product0_.image_url as image_ur7_6_,
+        product0_.is_active as is_activ8_6_,
+        product0_.is_featured as is_featu9_6_,
+        product0_.long_description as long_de10_6_,
+        product0_.name as name11_6_,
+        product0_.price as price12_6_,
+        product0_.short_description as short_d13_6_,
+        product0_.sku as sku14_6_,
+        product0_.stock_quantity as stock_q15_6_,
+        product0_.updated_at as updated16_6_,
+        product0_.weight_kg as weight_17_6_ 
+    from
+        products product0_ 
+    where
+        product0_.is_active=1 limit ?
+2025-10-14 09:52:15.236 DEBUG 175409 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        category0_.id as id1_2_0_,
+        category0_.created_at as created_2_2_0_,
+        category0_.description as descript3_2_0_,
+        category0_.display_order as display_4_2_0_,
+        category0_.image_url as image_ur5_2_0_,
+        category0_.is_active as is_activ6_2_0_,
+        category0_.name as name7_2_0_,
+        category0_.updated_at as updated_8_2_0_ 
+    from
+        categories category0_ 
+    where
+        category0_.id=?
+Hibernate: 
+    select
+        category0_.id as id1_2_0_,
+        category0_.created_at as created_2_2_0_,
+        category0_.description as descript3_2_0_,
+        category0_.display_order as display_4_2_0_,
+        category0_.image_url as image_ur5_2_0_,
+        category0_.is_active as is_activ6_2_0_,
+        category0_.name as name7_2_0_,
+        category0_.updated_at as updated_8_2_0_ 
+    from
+        categories category0_ 
+    where
+        category0_.id=?
+2025-10-14 09:52:15.238 TRACE 175409 --- [nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2025-10-14 09:52:15.244 DEBUG 175409 --- [nio-8080-exec-8] c.n.e.controller.common.BaseController   : Exiting getAllProducts with result: [com.nakhandev.ecommercecart.dto.product.ProductSummaryDTO@669391ce]
+2025-10-14 09:52:15.246 DEBUG 175409 --- [nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-10-14 09:52:15.247 DEBUG 175409 --- [nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.nakhandev.ecommercecart.dto.common.ApiResponse@dcc48eb]
+2025-10-14 09:52:15.256 DEBUG 175409 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-14 09:52:28.238  INFO 175409 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-14 09:52:28.241  INFO 175409 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-14 09:52:28.245  INFO 175409 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

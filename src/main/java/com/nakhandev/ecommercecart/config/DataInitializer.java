@@ -222,15 +222,15 @@ public class DataInitializer implements CommandLineRunner {
             admin.setIsActive(true);
 
             // Create regular users
-            User john = new User();
-            john.setUsername("john_doe");
-            john.setEmail("john@example.com");
-            john.setPassword("password123");
-            john.setFirstName("John");
-            john.setLastName("Doe");
-            john.setPhoneNumber("9876543210");
-            john.setRole(User.Role.CUSTOMER);
-            john.setIsActive(true);
+            User nakdev = new User();
+            nakdev.setUsername("nakdev");
+            nakdev.setEmail("nakdev@example.com");
+            nakdev.setPassword("password123");
+            nakdev.setFirstName("Nak");
+            nakdev.setLastName("Dev");
+            nakdev.setPhoneNumber("9876543210");
+            nakdev.setRole(User.Role.CUSTOMER);
+            nakdev.setIsActive(true);
 
             User jane = new User();
             jane.setUsername("jane_smith");
@@ -253,7 +253,7 @@ public class DataInitializer implements CommandLineRunner {
             manager.setIsActive(true);
 
             userService.saveUser(admin);
-            userService.saveUser(john);
+            userService.saveUser(nakdev);
             userService.saveUser(jane);
             userService.saveUser(manager);
 

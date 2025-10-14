@@ -303,7 +303,7 @@ function getCurrentUserId() {
     // Check if user is logged in
     <c:choose>
         <c:when test="${not empty sessionScope.user}">
-            return ${sessionScope.user.id};
+            return '${sessionScope.user.id}';
         </c:when>
         <c:otherwise>
             // For guest users, use session ID or generate guest ID

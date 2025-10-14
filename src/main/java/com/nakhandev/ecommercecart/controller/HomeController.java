@@ -1,8 +1,8 @@
 package com.nakhandev.ecommercecart.controller;
 
 import com.nakhandev.ecommercecart.dto.product.ProductSummaryDTO;
-import com.nakhandev.ecommercecart.dto.category.CategorySummaryDTO;
 import com.nakhandev.ecommercecart.model.Product;
+import com.nakhandev.ecommercecart.model.Category;
 import com.nakhandev.ecommercecart.service.ProductService;
 import com.nakhandev.ecommercecart.service.CategoryService;
 import org.slf4j.Logger;
@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 @RequestMapping("/")
@@ -78,6 +79,34 @@ public class HomeController {
     public String categories(Model model) {
         logger.info("Serving categories page");
         return "categories/index";
+    }
+
+    /**
+     * Category detail page
+     */
+    @GetMapping("/categories/{id}")
+    public String categoryDetail(@PathVariable Long id, Model model) {
+        logger.info("Serving category detail page for category ID: {}", id);
+
+        try {
+            // Get category from API
+            Optional<Category> categoryOpt = categoryService.findCategoryById(id);
+            if (categoryOpt.isEmpty()) {
+                logger.warn("Category not found with ID: {}", id);
+                return "error/404";
+            }
+
+            Category category = categoryOpt.get();
+            model.addAttribute("category", category);
+
+            logger.info("Category detail page loaded successfully for category: {}", category.getName());
+            return "categories/detail";
+
+        } catch (Exception e) {
+            logger.error("Error loading category detail page for ID: " + id, e);
+            model.addAttribute("error", "Unable to load category details");
+            return "error/general";
+        }
     }
 
     /**
