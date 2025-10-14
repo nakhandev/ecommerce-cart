@@ -1,5 +1,6 @@
 com/nakhandev/ecommercecart/exception/SecurityException$UnauthorizedAccessException.class
 com/nakhandev/ecommercecart/model/Category.class
+com/nakhandev/ecommercecart/controller/CustomErrorController$1.class
 com/nakhandev/ecommercecart/controller/CartController.class
 com/nakhandev/ecommercecart/controller/ProductController.class
 com/nakhandev/ecommercecart/model/Order$OrderStatus.class
@@ -104,6 +105,7 @@ com/nakhandev/ecommercecart/dto/payment/PaymentGatewayResponse.class
 com/nakhandev/ecommercecart/validation/validator/RateLimitedValidator.class
 com/nakhandev/ecommercecart/dto/order/OrderItemDTO.class
 com/nakhandev/ecommercecart/controller/CategoryController$CategoryStats.class
+com/nakhandev/ecommercecart/controller/CustomErrorController.class
 com/nakhandev/ecommercecart/validation/validator/ValidPhoneNumberValidator.class
 com/nakhandev/ecommercecart/exception/ValidationException$WeakPasswordException.class
 com/nakhandev/ecommercecart/validation/util/ErrorMessageUtil$ErrorResponse.class

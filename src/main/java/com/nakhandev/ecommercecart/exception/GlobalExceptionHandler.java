@@ -182,7 +182,7 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(NoHandlerFoundException.class)
     public ResponseEntity<ApiResponse<Object>> handleNoHandlerFoundException(NoHandlerFoundException ex) {
-        logger.error("No handler found for request", ex);
+        logger.error("No handler found for request: {}", ex.getRequestURL(), ex);
 
         return ResponseEntity.status(HttpStatus.NOT_FOUND)
                 .body(ApiResponse.error("The requested resource was not found: " + ex.getRequestURL(),

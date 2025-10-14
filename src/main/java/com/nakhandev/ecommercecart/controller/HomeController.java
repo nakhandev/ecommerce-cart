@@ -216,4 +216,22 @@ public class HomeController {
         logger.info("Serving contact page");
         return "public/contact";
     }
+
+    /**
+     * Help page
+     */
+    @GetMapping("/help")
+    public String help(Model model) {
+        logger.info("Serving help page");
+        return "public/help";
+    }
+
+    /**
+     * User account orders page
+     */
+    @GetMapping("/account/orders")
+    public String accountOrders(Model model) {
+        logger.info("Serving account orders page");
+        return "account/orders";
+    }
 }
