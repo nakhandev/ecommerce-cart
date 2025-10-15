@@ -1,4 +1,7 @@
-<!-- 🛒 E-commerce Cart System - Full-Featured Shopping Cart -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00C0FF&center=true&vCenter=true&width=435&lines=E-commerce+Cart+System;Version+1.0.0+(V1)" alt="Typing SVG" />
+</p>
+
 
 <h1 align="center">🛒 E-commerce Cart System</h1>
 <h3 align="center">A full-featured shopping cart built using <span style="color:#6DB33F;">Spring MVC</span>, <span style="color:#00758F;">MySQL</span>, and <span style="color:#E76F00;">JSP</span></h3>
